@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - VOUS Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: url('https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .event-date {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">VOUS</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                <a href="events.html" class="text-blue-600 font-semibold">Events</a>
+                <a href="sermons.html" class="text-gray-800 hover:text-blue-600">Sermons</a>
+                <a href="giving.html" class="text-gray-800 hover:text-blue-600">Giving</a>
+                <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative hero-image flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="container mx-auto px-6 text-center z-10 text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Upcoming Events</h1>
+            <p class="text-xl md:text-2xl">Join us for worship, teaching, and community</p>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Event Calendar</h2>
+                
+                <!-- Monthly Filter -->
+                <div class="flex justify-between items-center mb-8">
+                    <button class="text-blue-600 hover:text-blue-800">
+                        <i class="fas fa-chevron-left mr-2"></i> Previous Month
+                    </button>
+                    <h3 class="text-xl font-semibold">June 2023</h3>
+                    <button class="text-blue-600 hover:text-blue-800">
+                        Next Month <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Events List -->
+                <div class="space-y-8">
+                    <!-- Event 1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="md:flex">
+                            <div class="bg-blue-600 text-white flex flex-col items-center justify-center p-4 event-date">
+                                <div class="text-2xl font-bold">05</div>
+                                <div class="text-sm">JUN</div>
+                            </div>
+                            <div class="p-6 flex-grow">
+                                <h3 class="text-xl font-bold mb-2">Sunday Service</h3>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>9:00 AM - 11:00 AM</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i class="fas fa-map-marker-alt mr-2"></i>
+                                    <span>Main Sanctuary</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">Join us for our weekly Sunday worship service with special guest speaker Pastor Michael Todd.</p>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full text-sm transition duration-300">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="md:flex">
+                            <div class="bg-blue-600 text-white flex flex-col items-center justify-center p-4 event-date">
+                                <div class="text-2xl font-bold">08</div>
+                                <div class="text-sm">JUN</div>
+                            </div>
+                            <div class="p-6 flex-grow">
+                                <h3 class="text-xl font-bold mb-2">Midweek Bible Study</h3>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>7:00 PM - 8:30 PM</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i class="fas fa-map-marker-alt mr-2"></i>
+                                    <span>Fellowship Hall</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">Deep dive into the Book of Romans with Pastor Jon. This week we'll cover Chapter 5.</p>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full text-sm transition duration-300">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="md:flex">
+                            <div class="bg-blue-600 text-white flex flex-col items-center justify-center p-4 event-date">
+                                <div class="text-2xl font-bold">11</div>
+                                <div class="text-sm">JUN</div>
+                            </div>
+                            <div class="p-6 flex-grow">
+                                <h3 class="text-xl font-bold mb-2">Community Outreach</h3>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>8:00 AM - 12:00 PM</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i class="fas fa-map-marker-alt mr-2"></i>
+                                    <span>Downtown Miami</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">Serve with us as we partner with local organizations to feed the homeless and distribute supplies.</p>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full text-sm transition duration-300">
+                                    Volunteer Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="md:flex">
+                            <div class="bg-blue-600 text-white flex flex-col items-center justify-center p-4 event-date">
+                                <div class="text-2xl font-bold">18</div>
+                                <div class="text-sm">JUN</div>
+                            </div>
+                            <div class="p-6 flex-grow">
+                                <h3 class="text-xl font-bold mb-2">Baptism Sunday</h3>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>During Both Services</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i class="fas fa-map-marker-alt mr-2"></i>
+                                    <span>Main Sanctuary</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">Celebrate with those taking the next step in their faith journey through baptism.</p>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full text-sm transition duration-300">
+                                    Sign Up for Baptism
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Locations</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Downtown Campus</h3>
+                    <p class="text-gray-700 mb-4">123 Church Street, Miami, FL 33101</p>
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.210467043784!2d-80.1913076849789!3d25.76161598363596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6823bcf83f7%3A0xef0b288e10bb269c!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">South Beach Campus</h3>
+                    <p class="text-gray-700 mb-4">456 Ocean Drive, Miami Beach, FL 33139</p>
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.210467043784!2d-80.1913076849789!3d25.76161598363596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6823bcf83f7%3A0xef0b288e10bb269c!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">VOUS Church</h3>
+                    <p class="text-gray-400">A church for the city, by the city.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Location</h4>
+                    <p class="text-gray-400">123 Church Street<br>Miami, FL 33101</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Service Times</h4>
+                    <p class="text-gray-400">Sunday: 9am & 11am<br>Wednesday: 7pm</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 VOUS Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
