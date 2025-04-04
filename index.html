@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOUS Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">VOUS</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-blue-600">About</a>
+                <a href="events.html" class="text-gray-800 hover:text-blue-600">Events</a>
+                <a href="sermons.html" class="text-gray-800 hover:text-blue-600">Sermons</a>
+                <a href="giving.html" class="text-gray-800 hover:text-blue-600">Giving</a>
+                <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <img src="https://images.pexels.com/photos/2694037/pexels-photo-2694037.jpeg" alt="Church building" class="hero-video">
+        <div class="container mx-auto px-6 text-center z-10 text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Welcome to VOUS</h1>
+            <p class="text-xl md:text-2xl mb-8">A church for the city, by the city</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                Join Us This Sunday
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Who We Are</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-700 mb-6">To bring people to Jesus and membership in His family, develop them to Christ-like maturity, and equip them for their ministry in the church and life mission in the world.</p>
+                    <a href="about.html" class="text-blue-600 hover:underline">Learn more about us →</a>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.pexels.com/photos/3760072/pexels-photo-3760072.jpeg" alt="Church service" class="rounded-lg object-cover h-full">
+                    <img src="https://images.pexels.com/photos/3760072/pexels-photo-3760072.jpeg" alt="Community" class="rounded-lg object-cover h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Event Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 font-semibold mb-2">Sunday, June 5</div>
+                        <h3 class="text-xl font-bold mb-2">Sunday Service</h3>
+                        <p class="text-gray-700 mb-4">Join us for worship and the word at 9am & 11am.</p>
+                        <button class="text-blue-600 hover:underline">More Details</button>
+                    </div>
+                </div>
+                <!-- Event Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 font-semibold mb-2">Wednesday, June 8</div>
+                        <h3 class="text-xl font-bold mb-2">Bible Study</h3>
+                        <p class="text-gray-700 mb-4">Midweek Bible study at 7pm in the main hall.</p>
+                        <button class="text-blue-600 hover:underline">More Details</button>
+                    </div>
+                </div>
+                <!-- Event Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg" alt="Event" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 font-semibold mb-2">Saturday, June 11</div>
+                        <h3 class="text-xl font-bold mb-2">Community Outreach</h3>
+                        <p class="text-gray-700 mb-4">Volunteer opportunities in our local community.</p>
+                        <button class="text-blue-600 hover:underline">More Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="events.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">
+                    View All Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">VOUS Church</h3>
+                    <p class="text-gray-400">A church for the city, by the city.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Location</h4>
+                    <p class="text-gray-400">123 Church Street<br>Miami, FL 33101</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Service Times</h4>
+                    <p class="text-gray-400">Sunday: 9am & 11am<br>Wednesday: 7pm</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 VOUS Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
