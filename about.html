@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - VOUS Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: url('https://images.pexels.com/photos/2694037/pexels-photo-2694037.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">VOUS</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-blue-600 font-semibold">About</a>
+                <a href="events.html" class="text-gray-800 hover:text-blue-600">Events</a>
+                <a href="sermons.html" class="text-gray-800 hover:text-blue-600">Sermons</a>
+                <a href="giving.html" class="text-gray-800 hover:text-blue-600">Giving</a>
+                <a href="contact.html" class="text-gray-800 hover:text-blue-600">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative hero-image flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="container mx-auto px-6 text-center z-10 text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Story</h1>
+        </div>
+    </section>
+
+    <!-- Church History -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Our History</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 rounded-full w-6 h-6 mt-1 flex-shrink-0"></div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">2010 - Founding</h3>
+                            <p class="text-gray-700 mt-2">VOUS Church was founded in Miami with a small group of believers meeting in a living room, passionate about reaching the city with the Gospel.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 rounded-full w-6 h-6 mt-1 flex-shrink-0"></div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">2013 - First Location</h3>
+                            <p class="text-gray-700 mt-2">We moved into our first dedicated space in downtown Miami, allowing us to host weekly services and community events.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 rounded-full w-6 h-6 mt-1 flex-shrink-0"></div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">2018 - Expansion</h3>
+                            <p class="text-gray-700 mt-2">We launched our second campus in South Beach and began streaming services online, reaching people globally.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 rounded-full w-6 h-6 mt-1 flex-shrink-0"></div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold">2023 - Present</h3>
+                            <p class="text-gray-700 mt-2">Today, VOUS Church serves thousands weekly across multiple locations and continues to grow its impact in the community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Leadership</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pastor 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                    <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg" alt="Pastor" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Rich Wilkerson Jr.</h3>
+                        <p class="text-blue-600 mb-2">Lead Pastor</p>
+                        <p class="text-gray-700">With over 15 years of ministry experience, Pastor Rich leads VOUS with a vision to reach the city.</p>
+                    </div>
+                </div>
+                <!-- Pastor 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                    <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg" alt="Pastor" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">DawnCheré Wilkerson</h3>
+                        <p class="text-blue-600 mb-2">Co-Pastor</p>
+                        <p class="text-gray-700">Pastor DawnCheré oversees worship and creative arts at VOUS Church.</p>
+                    </div>
+                </div>
+                <!-- Pastor 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                    <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg" alt="Pastor" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Jon Rivera</h3>
+                        <p class="text-blue-600 mb-2">Executive Pastor</p>
+                        <p class="text-gray-700">Pastor Jon leads operations and discipleship at VOUS Church.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Love God</h3>
+                    <p class="text-gray-700">We prioritize our relationship with God above all else.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Love People</h3>
+                    <p class="text-gray-700">We demonstrate God's love through serving others.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-globe text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Reach the World</h3>
+                    <p class="text-gray-700">We're committed to sharing the Gospel globally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">VOUS Church</h3>
+                    <p class="text-gray-400">A church for the city, by the city.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Location</h4>
+                    <p class="text-gray-400">123 Church Street<br>Miami, FL 33101</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Service Times</h4>
+                    <p class="text-gray-400">Sunday: 9am & 11am<br>Wednesday: 7pm</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 VOUS Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
